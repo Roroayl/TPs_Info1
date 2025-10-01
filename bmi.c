@@ -2,11 +2,12 @@
 
 int main(int argc, char *argv[]) {
 	float peso=0, altura=0, ibm=0;
-	
+	do{
 	printf("Ingrese el peso en Kg: ");
 	scanf("%f", &peso);
 	printf("\nIngrese la altura en metros: ");
 	scanf("%f", &altura);
+	}while(peso<0 || altura<0);
 	
 	ibm= peso / (altura*altura);
 	
