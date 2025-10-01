@@ -10,9 +10,22 @@ int main(int argc, char *argv[]) {
 	
 	ibm= peso / (altura*altura);
 	
-	printf("\nSu Ìndice de masa corporal es: %.2f", ibm);
+	printf("\nSu √≠ndice de masa corporal es: %.2f", ibm);
 	
-	printf("\nÕndice| CondiciÛn\n <18.5|Bajo peso\n 18.5 a 24.9| Normal\n 25.0 a 29.9| Sobrepeso\n >=30| Obesidad");
+	printf("\n√çndice| Condici√≥n\n <18.5|Bajo peso\n 18.5 a 24.9| Normal\n 25.0 a 29.9| Sobrepeso\n >=30| Obesidad");
+
+	if(ibm<18.05){
+		printf("Usted se encuentra en Bajo peso");
+	}
+	if else(ibm>=18.05 && ibm<24.9){
+		printf("Usted se encuentra en Normal");
+	}
+	if else(ibm>=25 && ibm<29.9){
+		printf("Usted se encuentra en Sobrepeso");
+	}
+	else{
+		printf("Usted se encuentra en Obesidad");
+	}
 	
 	return 0;
 }
